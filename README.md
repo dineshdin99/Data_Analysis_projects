@@ -53,9 +53,9 @@ Job_satisfaction: The employees are serveyed and (1-5) ratings are taken,using t
 Comparison and Optimization: Tested various categories and sectors to determine optimal strategies for reducing attrition rates company-wide.
 
 ## Conclusion
-Based on the analysis, it was concluded that addressing salary disparities, particularly for those earning below average,
+Based on the analysis, it was concluded that giving less salary, particularly for those earning below average,should be prioritized to mitigate attrition.
 
-should be prioritized to mitigate attrition. Age and gender also emerged as significant factors influencing turnover rates,
+Age and gender also emerged as significant factors influencing turnover rates,
 
 suggesting the need for targeted retention strategies.
 
