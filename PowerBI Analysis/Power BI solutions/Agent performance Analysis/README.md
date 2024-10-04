@@ -11,21 +11,21 @@ The dashboard helps managers make data-driven decisions to enhance customer serv
 ## Table of Contents
 
 - [Project Title](#project-title)
-- 
+
 - [Project Description](#project-description)
-- 
+
 - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
-- 
+
 - [Project Insights](#project-insights)
-- 
+
 - [Business Decisions](#business-decisions)
-- 
+
 - [Installation](#installation)
-- 
+
 - [Usage](#usage)
-- 
+
 - [Technologies Used](#technologies-used)
-- 
+
 - [Author](#author)
 
   ## Key Performance Indicators (KPIs)
@@ -43,15 +43,15 @@ The dashboard helps managers make data-driven decisions to enhance customer serv
 ## Project Insights
 
 - **Jim has answered 523 calls** (highest among agents).
-- 
+
 - **Average Satisfaction Rating (Maratha)**: 3.47, showing good performance.
-- 
+
 - **Average Talk Duration** is 30 seconds, indicating efficient handling of calls.
-- 
+
 - **Answered Calls**: 4054 out of 5000 calls answered.
-- 
+
 - **Call Volume Timeline**: Shows a general decrease in call volume.
-- 
+
 - **Top Performers**: Dan and Jim have the highest number of answered calls and a strong performance rating.
 
 ## Business Decisions
