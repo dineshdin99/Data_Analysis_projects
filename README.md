@@ -1,6 +1,6 @@
-#Power BI reports and Dashboards
+# Power BI reports and Dashboards
 
-##Tools Required
+## Tools Required
 1.Excel
 2.Power BI
 
