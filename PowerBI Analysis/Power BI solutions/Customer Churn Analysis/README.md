@@ -1,68 +1,73 @@
-# Comprehensive Employee Demographics and Performance Dashboard
+# Customer Churn Analysis Dashboard
 
-## Project Overview
-This project provides an interactive Power BI dashboard to analyze employee demographics, performance metrics, promotion rates, turnover, and hiring patterns. It aims to help HR and management make data-driven decisions to improve diversity, talent retention, and employee satisfaction.
+## Project Description
 
-## Objective
-The key objectives of this dashboard are:
-- Analyze gender distribution, promotions, and hiring patterns.
-- Monitor employee turnover and performance ratings.
-- Aid in strategic workforce management.
+This project aims to analyze customer churn using a dashboard to understand key factors contributing to churn in a business. It focuses on customer behaviors, subscription plans, payment methods, and demographic information to derive actionable insights for improving customer retention.
 
-## Data Description
-The dataset includes the following columns:
-- **Employee ID**: Unique employee identifier.
-- **Gender**: Gender of the employee (Male/Female).
-- **Hire Date**: Date of employee's hire.
-- **Promotion Date**: Last promotion date.
-- **Status**: Active or Leaver.
-- **Performance Rating**: Employee’s performance score.
-- **Department**: Department of the employee.
+## Domain
 
-## Key Metrics and DAX Calculations
+Customer Relationship Management (CRM)
 
-1. **Number of Men**:
-    ```DAX
-    NumberOfMen = CALCULATE(COUNTROWS('EmployeeTable'), 'EmployeeTable'[Gender] = "Male")
-    ```
+## Objectives
+The primary objectives of this churn analysis project were to:
 
-2. **Number of Women**:
-    ```DAX
-    NumberOfWomen = CALCULATE(COUNTROWS('EmployeeTable'), 'EmployeeTable'[Gender] = "Female")
-    ```
+1. Identify customers who left the service within the last month.
 
-3. **Number of Leavers**:
-    ```DAX
-    NumberOfLeavers = CALCULATE(COUNTROWS('EmployeeTable'), 'EmployeeTable'[Status] = "Leaver")
-    ```
+2. Analyze the services each customer subscribed to, including phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies.
 
-4. **% of Employees Promoted (FY21)**:
-    ```DAX
-    EmployeesPromotedFY21 = CALCULATE(COUNTROWS('EmployeeTable'), 'EmployeeTable'[PromotionDate] >= DATE(2021,1,1), 'EmployeeTable'[PromotionDate] <= DATE(2021,12,31))
-    PercentagePromotedFY21 = DIVIDE(EmployeesPromotedFY21, TotalEmployees) * 100
-    ```
+3. Examine customer account information such as tenure, contract type, payment method, paperless billing status, monthly charges, total charges, and the number of tickets opened in administrative and technical categories.
 
-5. **% of Women Promoted**:
-    ```DAX
-    WomenPromoted = CALCULATE(COUNTROWS('EmployeeTable'), 'EmployeeTable'[PromotionDate] >= DATE(2021,1,1), 'EmployeeTable'[Gender] = "Female")
-    PercentageWomenPromoted = DIVIDE(WomenPromoted, TotalEmployees) * 100
-    ```
+4. Investigate demographic information about customers, including gender, age range, and whether they have partners and dependents.
 
-## Business Decisions to be Taken
-- **Improve Gender Diversity**: Analyze gender distribution and address discrepancies.
-- **Reduce Turnover**: Identify key turnover trends and take retention measures.
-- **Enhance Promotions**: Ensure equal promotion opportunities across genders.
-- **Targeted Hiring**: Improve recruitment strategies to align with diversity goals.
+## Insights
+1. Most customers opted for optic fiber services.
 
-## How to Use
-1. **Load the Dataset**: Ensure data is properly loaded into Power BI with appropriate data types.
-2. **Visualize the Metrics**: Use filters and slicers to drill down into key metrics.
-3. **Extract Insights**: Leverage the insights to make strategic HR and management decisions.
+2. The churn rate is higher when customers are on a monthly subscription plan.
 
-## Tools Used
-- **Power BI**: For data visualization and dashboard creation.
-- **DAX**: Data Analysis Expressions for creating metrics.
-- **Git**: Version control for managing project updates.
+3. Customers who pay paperless bills using electronic checks (e-checks) experience a higher churn rate.
 
-## Author
-- **Kurma Dinesh**: Data Analyst and Power BI Developer.
+4. The churn rate is greater among single customers compared to those with dependents.
+
+## Business Decisions
+
+1. Promote annual or longer-term subscriptions to reduce churn.
+
+2. Encourage alternative payment methods to e-checks for paperless billing customers.
+
+3. Develop targeted retention strategies for single customers, potentially offering family or dependent incentives to increase loyalty.
+
+## Tech Stack
+
+- **Programming Language:** Python, SQL
+
+- **Visualization Tool:** Power BI
+
+- **Database:** MySQL, CSV files
+
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
+
+## Data
+
+The dataset includes customer data such as:
+
+- Services subscribed (phone, internet, online security, etc.)
+
+- Customer account details (tenure, contract type, monthly charges, total charges, tickets opened)
+
+- Demographic information (gender, age, partners, dependents)
+
+Source: [Chrun-Dataset.xlsv]
+
+## Results
+
+The churn analysis revealed key insights into customer behavior. Most customers left the service due to short-term monthly plans, paperless e-check payments, and being single. These insights provide actionable steps for improving customer retention.
+
+## Contributors
+
+- **Kurma Dinesh** (Project Lead)
+
+## Contact
+
+For any inquiries, feel free to reach out at:
+- Email: kurmadinesh99@gmail.com
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
