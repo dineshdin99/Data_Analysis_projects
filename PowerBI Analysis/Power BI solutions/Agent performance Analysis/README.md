@@ -3,9 +3,7 @@
 ## Project Description
 
 This Power BI dashboard provides an in-depth analysis of customer service agent performance. It highlights key metrics like overall customer satisfaction,
-
 call handling efficiency, and agent-specific insights.
-
 The dashboard helps managers make data-driven decisions to enhance customer service and agent performance.
 
 ## Table of Contents
